@@ -1,0 +1,243 @@
+/* CSS Reset */
+:after
+:before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main */
+body{
+    background: #f5edd0;
+    margin: 0 auto;
+}
+/* Nav */
+
+nav{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    background-color: #c1a47c;
+
+}
+
+.logo{
+    display: relative;
+    max-width: 80px;
+    margin-top: 10px;
+    padding-left: 10px;
+    
+}
+#nav-toggle{
+    display: none;
+}
+
+nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    margin: 0;
+    left: 0;
+    right: 0;
+    padding-right: 30px;
+    top: 80px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(193, 164, 124,0.9);
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+nav .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-family: Quicksand, sans-serif;
+    
+}
+
+li {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon{
+    max-width: 35px;
+}
+
+nav :checked ~ .links {
+    bottom: 0;
+}
+
+nav .icon-burger{
+    display: block;
+    right: 40px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+}
+
+nav :checked ~ .icon-burger .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+}
+
+nav :checked ~ .icon-burger .line:nth-child(2) {
+    opacity: 0;
+}
+
+nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+/* Styling af indhold */
+
+.video{
+    max-width: 100%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.video_button{
+    position: relative;
+    left: 130px;
+    background-color: #cfd4b2;
+    color: black;
+    font-size: 25px;
+    font-family: Quicksand, sans-serif;
+    padding: 4px 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: black;   
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+}
+.container video {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+  
+.container .btn {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #cfd4b2;
+    color: black;
+    font-size: 25px;
+    font-family: Quicksand, sans-serif;
+    padding: 12px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.ugensblomstimg{
+    width: 320px;
+    height: 250px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ugensblomst_button{
+    position: relative;
+    left: 80px;
+    background-color: #cfd4b2;
+    color: black;
+    font-size: 25px;
+    font-family: Quicksand, sans-serif;
+    padding: 4px 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: black;  
+}
+
+.inspirationimg{
+    width: 320px;
+    height: 250px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inspiration_button{
+    position: relative;
+    left: 100px;
+    background-color: #cfd4b2;
+    color: black;
+    font-size: 25px;
+    font-family: Quicksand, sans-serif;
+    padding: 4px 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.omosimg{
+    width: 320px;
+    height: 250px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.omos_button{
+    position: relative;
+    left: 120px;
+    background-color: #cfd4b2;
+    color: black;
+    font-size: 25px;
+    font-family: Quicksand, sans-serif;
+    padding: 4px 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+/* Computer størrelse */
+@media screen and (min-width: 1200px){
+
+}
